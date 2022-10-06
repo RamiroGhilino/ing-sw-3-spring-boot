@@ -20,11 +20,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class HelloWorldService {
-
+	
+	public static boolean first_time = true;
 	
 
 	public String getHelloMessage() {
-		return "Spring boot says hello from a Docker container";
+		if(first_time) {
+			first_time = false;
+			return "Hola Hola";
+			
+		}else {
+			return "Hello Hello";
+		}
 	}
 
 }
