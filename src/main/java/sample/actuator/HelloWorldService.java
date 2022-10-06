@@ -21,15 +21,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloWorldService {
 	
-	public static boolean first_time = true;
+	public static boolean pair = true;
 	
 
 	public String getHelloMessage() {
-		if(first_time) {
-			first_time = false;
+		if(pair) {
+			pari = false;
 			return "Hola Hola";
 			
 		}else {
+			pair = true:
 			return "Hello Hello";
 		}
 	}
