@@ -26,11 +26,11 @@ public class HelloWorldService {
 
 	public String getHelloMessage() {
 		if(pair) {
-			pari = false;
+			pair = false;
 			return "Hola Hola";
 			
 		}else {
-			pair = true:
+			pair = true;
 			return "Hello Hello";
 		}
 	}
