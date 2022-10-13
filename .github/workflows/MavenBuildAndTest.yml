@@ -60,6 +60,6 @@ jobs:
           cache: maven
           
       # Compile the application
-      - name: Build with Maven
+      - name: Test with Maven
         run: |
           mvn -B test 
